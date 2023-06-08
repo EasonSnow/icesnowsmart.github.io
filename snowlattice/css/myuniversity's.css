@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../pictures/landscape.jpg);
+   
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(15px);
+}
+section{
+    position:relative;
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.title {
+    position: relative;
+    color: #000;
+    font-size: 32px;
+    font-family: 'cwTeXFangSong', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border:2px solid rgb(0,0,0);
+    border-radius: 40px;
+    flex: none;
+    
+}
+ .navigation a{
+    color: #000;
+   justify-content: left;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius:  20px;
+    margin-left: 5px;
+    transition: 0.3s;
+    transition-property: background ;
+    flex: none;
+}
+ .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+ .navigation a:hover{
+    background: #fff;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "sidebar main sidebar2"
+    "footer footer footer";
+    grid-gap: 1px; 
+}
+.header {
+    grid-area: header;
+    border: 1px solid black;
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.label{
+    width: 200px;
+}
+li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    
+}
+li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar {
+    grid-area: sidebar;
+   min-height: 800px;
+   
+} 
+.main {
+    grid-area: main;
+    min-height: 800px;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    min-height: 800px;
+    
+}
+
+.footer {
+    grid-area: footer;
+    border: 1px solid black;
+
+}
+
+.item {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+}
+
+.footer2{
+    text-align: center;
+}

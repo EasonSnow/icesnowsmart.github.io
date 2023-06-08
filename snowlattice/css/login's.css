@@ -1,0 +1,320 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../pictures/landscape.jpg);
+   
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*-------------------------------------------------*/
+section{
+position:relative;
+
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+
+}
+/*-------------------------------------------------*/
+header{
+position: relative;
+top: 0;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 100px;
+}
+
+.title {
+    position: relative;
+    color: #000;
+    font-size: 32px;
+    font-family: 'cwTeXFangSong', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border:2px solid rgb(0,0,0);
+    border-radius: 40px;
+    
+}
+
+header .navigation a{
+    color: #000;
+   
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius:  20px;
+    margin-left: 5px;
+    transition: 0.3s;
+    transition-property: background ;
+}
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+header .navigation a:hover{
+    background: #fff;
+}
+/*-------------------------------------------------*/
+
+
+
+.centerp{
+  
+    margin-top: 10px;
+}
+
+.main{
+    display: flex;
+}
+
+.content{
+   flex: none;
+    width: 500px;
+    height:  480px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 30px;
+}
+
+
+.centertxt{
+    
+    color: rgb(0, 252, 239);
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+.centertxt span{
+color: #fff;
+}
+
+.centerp{
+display: block;
+font-size: 20px;
+font-weight: 500;
+margin-bottom: 5px;
+}
+
+
+.more{
+    display: flex;
+   height: 85px;
+   align-items: center;
+   
+}
+.info-btn{
+    flex: none;
+    height: 37px;
+    width: 175px;
+    color: #fff;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    margin-right: 50px;
+    border-radius: 5px;
+    transition: 0.2s;
+    transition-property: background-color;
+}
+ .info-btn:hover{
+  background-color: cadetblue;
+}
+
+
+
+.media-icons{   
+    display: flex;
+ 
+    align-items:center;
+    justify-content: start;  
+    margin: auto; 
+    
+}
+
+ .media-icons a{
+   position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+  
+}
+.media-icons a:not(:last-child){
+    margin-right: 50px;
+}
+ .media-icons a:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+.box{
+    flex: none;
+    border: 2px solid black;
+   width:400px;
+   height: 500px;
+   margin-left: 50px;
+   border-radius: 10px;
+   backdrop-filter: blur(10px);
+}
+
+ 
+
+
+
+form{
+    flex: none;
+    width: 300px;
+    height:350px ;
+   margin: 50px 50px;
+   justify-content: center;
+  
+}
+.formtitle{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.inputBox{
+   
+   position: relative;
+   margin-top: 50px;
+
+}
+input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em ;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.inputBox span{
+position: absolute;
+left: 0;
+padding: 20px 0px 10px;
+pointer-events: none;
+color: #8f8f8f;
+font-size: 1em;
+letter-spacing: 0.05em;
+transition: 0.5s;
+}
+
+input:focus ~ span,
+input:valid ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+
+.inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+input:valid ~ i,
+input:focus ~ i{
+    height: 44px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.links a:hover,
+.links a:nth-child(2){
+    color: #fff;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 30px;
+
+}
+
+input[type="submit"]:active
+{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
